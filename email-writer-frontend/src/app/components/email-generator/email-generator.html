@@ -1,0 +1,68 @@
+<div class="container">
+
+    <div class="header">
+
+        <h1>AI Email Writer</h1>
+
+        <p>
+            Generate professional email replies using AI
+        </p>
+
+    </div>
+
+    <mat-card class="email-card">
+
+        <mat-form-field appearance="outline" class="full-width">
+
+            <mat-label>Email Content</mat-label>
+
+            <textarea
+                matInput
+                rows="8"
+                placeholder="Paste your email here...">
+            </textarea>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+
+            <mat-label>Select Tone</mat-label>
+
+            <mat-select>
+
+                <mat-option value="professional">Professional</mat-option>
+
+                <mat-option value="friendly">Friendly</mat-option>
+
+                <mat-option value="formal">Formal</mat-option>
+
+                <mat-option value="casual">Casual</mat-option>
+
+            </mat-select>
+
+        </mat-form-field>
+
+        <button
+            mat-raised-button
+            color="primary"
+            class="generate-btn">
+
+             Generate Reply
+
+        </button>
+
+    </mat-card>
+
+    <mat-card class="reply-card">
+
+        <h2> AI Generated Reply</h2>
+
+        <div class="reply-box">
+
+            Your generated reply will appear here...
+
+        </div>
+
+    </mat-card>
+
+</div>

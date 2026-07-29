@@ -1,0 +1,89 @@
+body{
+    background:#F8FAFC;
+}
+
+.container{
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.header h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.header p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.full-width{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+}
+
+.email-card{
+
+    padding:30px;
+
+    border-radius:16px;
+
+}
+
+.reply-card{
+
+    margin-top:30px;
+
+    padding:30px;
+
+    border-radius:16px;
+
+}
+
+.reply-box{
+
+    min-height:180px;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    background:#F5F5F5;
+
+    white-space:pre-wrap;
+
+}
+
+.generate-btn{
+
+    width:100%;
+
+    height:50px;
+
+    font-size:18px;
+
+}
