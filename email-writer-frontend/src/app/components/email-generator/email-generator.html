@@ -11,14 +11,15 @@
     </div>
 
     <mat-card class="email-card">
-
+        <form  [formGroup]="emailForm" (ngSubmit)="generateReply()"> 
         <mat-form-field appearance="outline" class="full-width">
 
             <mat-label>Email Content</mat-label>
 
             <textarea
                 matInput
-                rows="8"
+                rows="8" 
+                formControlName="emailContent"
                 placeholder="Paste your email here...">
             </textarea>
 
@@ -28,7 +29,7 @@
 
             <mat-label>Select Tone</mat-label>
 
-            <mat-select>
+            <mat-select formControlName="tone">
 
                 <mat-option value="professional">Professional</mat-option>
 
@@ -45,21 +46,24 @@
         <button
             mat-raised-button
             color="primary"
-            class="generate-btn">
+            class="generate-btn"
+            type="submit"
+            >
 
              Generate Reply
 
         </button>
+        </form>
 
     </mat-card>
 
-    <mat-card class="reply-card">
+    <mat-card class="reply-card" *ngIf="reply">
 
         <h2> AI Generated Reply</h2>
 
         <div class="reply-box">
 
-            Your generated reply will appear here...
+           {{reply}}
 
         </div>
 
